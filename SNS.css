@@ -60,9 +60,15 @@ h1#HeadText {
     padding: 200px;
 }
 
-#about {
+.about {
     text-align: center;
     padding: 0 20px;
+}
+
+.about a {
+    background-color: red;
+    color: white;
+    font-style: italic;
 }
 
 footer {
