@@ -1,0 +1,120 @@
+html {
+    font-family: "Shippori Mincho", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header p{
+    font-size: 20px;
+    line-height: 5rem;
+    padding: 0 20px;
+}
+
+#Header-IMG {
+    margin-top: 5rem;
+}
+
+#news-yuudou a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav#head-band {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav#head-band ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#head-band ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav#head-band img {
+    width: 100px;
+}
+
+h1#HeadText {
+    text-align: center;
+    padding: 200px;
+}
+
+.about {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about a {
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    nav#head-band ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    nav#head-band img {
+        width: 80px;
+    }
+
+    header p {
+        font-size: 1px;  /* さらに小さく調整 */
+        padding: 0 15px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav#head-band ul {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    nav#head-band img {
+        width: 90px;
+    }
+
+    header p {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
