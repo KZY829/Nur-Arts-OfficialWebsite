@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* メインコンテンツ */
+.content {
+    flex: 3;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post-header {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.post-body {
+    display: flex;
+    gap: 15px;
+}
+
+.post-body img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-details {
+    flex: 1;
+}
+
+.post-details h2 a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.post-details .power {
+    color: green;
+    font-weight: bold;
+}
+
+.post-details .highlight {
+    color: orange;
+}
+
+/* サイドバー */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.search-box {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+}
+
+.search-box button {
+    padding: 8px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* リストスタイル */
+.mod-recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mod-recommendations li {
+    margin-bottom: 5px;
+}
+
+.mod-recommendations a {
+    text-decoration: none;
+    color: #0073e6;
+}

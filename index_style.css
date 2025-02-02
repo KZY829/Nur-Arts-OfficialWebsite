@@ -1,0 +1,162 @@
+/* 共通のスタイル */
+html {
+    font-family: "Shippori Mincho", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ナビゲーションバーの固定 */
+nav#head-band {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav#head-band ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#head-band ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav#head-band img {
+    width: 80px;
+}
+
+/* メインエリア */
+#main {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#head {
+    width: 100%;
+    height: auto;
+}
+
+#explanation {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* コンテンツエリアのレイアウト */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.post-body {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.post-body img {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-details {
+    flex: 1;
+    font-size: 14px;
+}
+
+.post-details h2 {
+    font-weight: bold;
+}
+
+/* ニュースセクションのスタイル */
+.mod-recommendations {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 20px;
+}
+
+/* スマートフォン向け（幅600px以下） */
+@media screen and (max-width: 600px) {
+    nav#head-band ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #explanation {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .post-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .post-body img {
+        width: 50%;
+    }
+
+    .post-details {
+        font-size: 12px;
+    }
+}
+
+/* タブレット向け（幅601px〜1024px） */
+@media screen and (max-width: 1024px) {
+    nav#head-band ul {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #explanation {
+        font-size: 16px;
+    }
+
+    .post-details {
+        font-size: 13px;
+    }
+}
